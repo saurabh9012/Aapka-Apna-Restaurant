@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aapka Apna Restaurant</title>
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Link font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Yha pr main slider vaala jo link hai jo maine swiper.js se copy ki hai wo kruga.Neche dekhe. -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- link icons ye hum font awesome cdn se laaye.-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+</head>
+<body>
+    <!-- Navbar Start -->
+    <header>
+        <nav class="nav1">
+            <img src="image/logo.jpg" alt="">
+            <h2>Welcome to <span>Our</span> Restaurant</h2>
+            <!-- Ye right side mein jo icons aarhe hai whatsapp facebook etc vaale unki leye.-->
+            <div class="right">
+                <!-- Ye ek code hote hai facebook whatsapp etc ki leye neche jo deye hai. -->
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-twitter"></i>
+           </div>
+        </nav>
+
+        <!-- Ab yha se neche krege hum nav2 ki leye Kaam neche dekhe. -->
+        <!-- Maine nav2 name ki ek div uske class bnaye neche dekhe. -->
+        <nav class="nav2">
+            <!-- fr maine 3 div bnaye. -->
+            <!-- first div nav2-left vaale jisme mobile number or email rhega. -->
+            <div class="nav2-left">
+                    <!-- <img src="image/logo2.gif" alt=""> -->
+                    <h2>Aapka Apna <span>Restaurant</span></h2>
+                    <p>Everything for You...</p>
+            </div>
+            <label for="show-menu" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+            <!-- <div class="bx bx-menu"  id="menu-icon"></div> -->
+            <!-- Ab jo 2nd div bnanega wo logo ki leye hoga center div. -->
+            <!-- <div class="nav2-center">
+                <h1>Aapka Apna <span>Resturant</span></h1>
+                <p>Everything for You...</p>
+            </div> -->
+            <!-- Ab bnayege 3rd div jisme hoga contact details. -->
+            <div class="nav2-right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#dishes">Dishes</a></li>
+                    <li><a href="#menu">Menu</a></li> 
+                    <li><a href="#review">Reviews</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+            </div> 
+        </nav>
+        <!--Nav2 yha pr end Hua.-->
+
+
+
+       
+    </header>
+    <!-- Navbar End -->
+
+
+    <!-- Home Section Start -->
+        <section id="home">
+            <div class="home-content">
+                <h2>Full <span>Vegetarian</span> Food</h2>
+                <h3>Eat Fresh & Healthy Foo<span>d</span></h3>
+                <p> We Serve The Best Indian Food In Town</p>
+                <button id="btn">Order Now</button>
+            </div>
+            <div class="img">
+                <img src="image/logo2.gif" alt="">
+            </div>
+        </section>
+    <!-- Home Section End -->
+
+
+    <!-- About Section Start -->
+        <section id="about">
+            <div class="container">
+                <div class="heading">About <span>Us</span></div>
+                <div class="about-content">
+                    <div class="img">
+                        <img src="image/bg2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Enjoy Scrumptious, Authentic Indian Dishes</h3>
+                        <p>
+                            Prepared and served with the utmost care, We bring you a delightful array of aromatic dishes 
+                            handcrafted and perfected by our chef. All restaurant items can be enjoyed in the warm, 
+                            comfortable atmosphere of our Indian Restaurant in Dehradun, Uttrakhand, or you can order take-out.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- About Section End -->
+
+
+    <!-- Dishes Section Start -->
+        <section id="dishes">
+            <div class="container">
+                <div class="heading">Popular <span>Dishes</span></div>
+                <div class="top-card">
+                    <div class="row">
+                        <img src="image/p1.jpg" alt="">
+                        <div class="card-content">
+                            <h3>Panner Tikka</h3>
+                             <p>Made with cubes of paneer & veggies marinated with yogurt and spices.</p>
+                             <button id="btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="image/p2.jpg" alt="">
+                        <div class="card-content">
+                            <h3>Rajisthani Thali</h3>
+                             <p>The highlight of a Rajasthani thali is the GHEE,Everything is cooked in Ghee.</p>
+                             <button id="btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="image/p3.webp" alt="">
+                        <div class="card-content">
+                            <h3>Punjabi Style Kadhi</h3>
+                             <p>A bowl of warm kadhi pakora with steamed rice is the ultimate comfort food</p>
+                             <button id="btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="image/p4.jpg" alt="">
+                        <div class="card-content">
+                            <h3>Methi Malai Panner</h3>
+                             <p>The rich, creamy gravy is made from onions, cashews, almonds, and heavy cream.</p>
+                             <button id="btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Dishes Section End -->
+
+
+
+    <!-- Menu Section Start -->
+        <section id="menu">
+            <div class="container">
+                <div class="heading">Popular <span>Dishes</span></div>
+                <nav class="nav4">
+                    <div class="menu-nav">
+                        <ul>
+                            <li><a href="#soup">Soup & Salad</a></li>
+                            <li><a href="#chaat">Chaat & More</a></li>
+                            <!-- <li><a href="#tandoor">Tandor Se</a></li> -->
+                            <li><a href="#vegetable">Vegetable Entree</a></li>
+                            <li><a href="#asian">Asian-Fushion</a></li> 
+                            <li><a href="#rice">Rice & Noodles</a></li> 
+                            <li><a href="#desserts">Desserts</a></li> 
+                            <li><a href="#drinks">Drinks/Juices</a></li> 
+                        </ul>
+                    </div>  
+                </nav>
+
+                <div id="soup">
+                    <h1>Soup & Salad</h1>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="image/1.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Cream Of Tomato</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/2.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Mixed Green Salad</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/3.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Thick Tomato Soup</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/4.jpg" alt="">
+                            <div class="card-content1">
+                                <h4>ManChow Veg Soup</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="chaat">
+                    <h1>Chaat & More</h1>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="image/5.jpg" alt="">
+                            <div class="card-content1">
+                                <h4>Pani Puri(Golgape)</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <img src="image/6.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Aloo Tikki Chaat</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/7.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Dahi Papri Chaat</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/8.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Palak Patta Chaat</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="vegetable">
+                    <h1>Vegetable Entree</h1>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="image/9.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Panner Tikka Masala</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <img src="image/10.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Palak Panner</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/11.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Kadhai Panner</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/12.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Matart Masala</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/13.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Kaju Khoya Curry</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/14.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Bhindi Jaipuri</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/15.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Baingan Bharta</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/16.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Gattey ki Sabji</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/17.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Dal Makhani</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/18.jpg" alt="">
+                            <div class="card-content1">
+                                <h4>Chana Masala</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/19.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Yellow Dal Tadka</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/20.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Dum Aloo</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/21.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Shahi Panner</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/22.jpg" alt="">
+                            <div class="card-content1">
+                                <h4>Panner Makhani</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="asian">
+                    <h1>Asian-Fushion</h1>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="image/23.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Chilli patato</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <img src="image/24.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Spring Roll</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/25.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Momos</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/26.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Manchurian</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="rice">
+                    <h1>Rice & Noodles</h1>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="image/27.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Veg Fried Rice</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <img src="image/28.jpg" alt="">
+                            <div class="card-content1">
+                                <h4>Veg Noodles</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/29.jpg" alt="">
+                            <div class="card-content1">
+                                <h4>Jeera Rice</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/30.jpg" alt="">
+                            <div class="card-content1">
+                                <h4>Chilli Noodles</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="desserts">
+                    <h1>Desserts</h1>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="image/31.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Moong Dal Halwa</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <img src="image/32.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Gulab Jamun</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/33.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Ras Malai</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/34.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Ice Cream</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="drinks">
+                    <h1>Drinks/Juice</h1>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="image/35.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Bottled Water</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <img src="image/36.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Ginger Beer</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/37.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Kashmiri Soda</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/38.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Mango Juice</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/39.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Milk Shake</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/40.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Virgin Mojito</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/41.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Aam Ka Panna</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/42.webp" alt="">
+                            <div class="card-content1">
+                                <h4>Soda</h4>
+                                <button id="btn">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Menu Section End -->
+
+
+
+    <!-- Reviews Section Start -->
+    <section id="review">
+        <div class="container1">
+            <div class="heading">Customers <span>Review</span></div>
+            <div class="card-wrapper1">
+                <div class="card-review">
+                    <img src="image/r1.jpg" alt="">
+                    <h4>Simranjeet</h4>
+                    <p>Nice flavors,it's one of the best Indian food place in the area.Aloo Tikki,Panner Tikka Masala 
+                        was great.We also tried Rajasthani Thali the other day and it was great.</p>
+                </div>
+                <div class="card-review">
+                    <img src="image/r2.webp" alt="">
+                    <h4>Pankaj Chauhan</h4>
+                    <p>Very High Quality food and ingredients, if you want very flavorful and authentic Indian food this
+                        is the place! Always friednly service.
+                    </p>
+                </div>
+                <div class="card-review">
+                    <img src="image/r3.jpg" alt="">
+                    <h4>Mohan Singh</h4>
+                    <p>Great food and amazing service.Everything was as expected.We went during buffet and food was fresh
+                        and staff was welcoming with great service.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews Section End -->
+
+
+
+    <!-- Contact Sectin Start -->
+    <section id="contact">
+        <div class="container">
+            <div class="heading">Contact <span> Us</span></div>
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>  
+                    <div>
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                    <div>
+                        <label for="inputPhone" class="form-label">Phone</label>
+                        <input type="number" class="form-control" id="inputPhone">
+                    </div>
+                    <!-- <div>
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="2"></textarea>
+                    </div> -->
+                    <button id="contact-btn">Submit</button>
+                </div>
+
+                <div class="col" id="col2">
+                    <h2>Info</h2>
+                    <p><i class="fa-solid fa-envelope" style="color: white;"></i>  aapkaapnaresturant@gmail.com</p>
+                    <p><i class="fa-solid fa-phone" style="color: white;"></i>  +91-8755626778</p>
+                    <p><i class="fa-solid fa-house" style="color: white;"></i> Aapka Apna Resturant</p>
+                    <p><i class="fa-solid fa-location-dot" style="color: white;"></i>  Our Address:<br>shop no-180, Rajpur Rd, Near Shiv Mandir<br> Dehradun, Uttarakhand 248009</p>
+                    <p><i class="fa-regular fa-clock" style="color: white;"></i> Our Time: <br>Mon-Sun: 8am-11pm</p>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+
+
+    <!-- Footer Section Start -->
+    <section id="footer">
+        <footer>
+            <div class="center">
+                Copyright &copy; Aapka Apna Resturant All rights reserved!
+            </div>
+        </footer>
+    </section>
+    <!-- Footer Section End -->
+   
+
+
+    <a href="#" class="arrow"><i><img src="image/up-arrow.png" alt=""></i></a>
+</body>
+</html>

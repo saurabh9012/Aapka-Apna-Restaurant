@@ -1,0 +1,657 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/* ye humne apne scrollbar ko apne hesab se edit kiya hai.*/
+html ::-webkit-scrollbar-track{ /*Eska mtlb hai ki jo pura scrollbar rhega wo kis color ka rhega.*/
+    background: transparent;
+}
+html ::-webkit-scrollbar-thumb{ /*Eska mtlb hai ki jis jgha hai scrollbar uska color kya rhega.*/
+    background: #b2744c;
+    /* border-radius: 10px; */
+}
+html ::-webkit-scrollbar{ /*scrollbar ki width kya rhege.*/
+    width: 10px;
+}
+body{ /*Puri body ko bg color deya hai.*/
+     background: #f7f5f2; 
+}
+
+
+/* Ab yha se Navbar ki leye style start kre hai. */
+/* Nav1 ki leye style kre hai. */
+.nav1{
+    background-color: white;
+    width: 100%; /*ye nav ki width de hai*/
+    height: 100px; /*ye height de hai*/
+    display:flex ;
+    justify-content:space-between;/*Ese kya hota hai jo lekha hua hai na humare nav1 mein usme 
+                                    dono side brabar brabar space aajata hai.*/
+    align-items: center;  /*Ese humare jo lekha hua hai na wo center mein aagya hai uper ki side se*/
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 5px gray; /*Eska use krne se humare jo text lekha hua tha or link the uske
+    aas paas shad aagye mtlb line type ka aagya hai aisa lg rha hai jaise box ho.*/
+    text-align: center; /*Eska use esliye kiya hai jo text lekha hua hai beach mein rhe hai esliye.*/
+}
+.nav1 img{ /*Nav1 mein jo image hai usko style kiya hai*/
+    width: 10%;
+    height: 100px; 
+    margin-left: 15px;
+    
+}
+.nav1 h2{ /*fr uske under jo heading hai welcome vaale usko style kiya hai.*/
+    padding-top: 10px; 
+    font-size: 2rem;
+    font-weight: bold;
+    color: #b2744c;
+}
+.nav1 h2 span{ /*heading ki under hi jo dusra color deya hai*/
+    color: #2f3640;
+}
+
+.nav1 .right i{ /* Ab hum kya krege right ki under i tag ki under jo icon hai unko style dege neche dekhe. */
+    font-size: 20px;
+    margin: 0px 10px;
+    background-color: #b2744c;
+    color: white;
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;  /*Or eska use neche jo condition de hai hover mein transform 
+    vaale uske saath mel kr kaam krna hai.*/
+}
+/* Ab hum kya krege jo ye neche hai ki hover eska use kr ki main kya kruga jaise mera cursor icon
+pr jaayega to wo rotated hoga jitna main usko boluga to uske leye ye transform ka use kiya hai.
+Neche dekhe. */
+.nav1 .right i:hover{
+    transform: rotate(360deg);
+    
+}
+/*Or yha pr humare nav1 ki style puri Hue. */
+
+.nav2{
+    /* position: sticky; */
+    width: 100%;  /*uske width set ki hai nav2 ki*/
+    height: 100px; /*height set ki hai*/
+    /* background-color: #b2744c; */
+    display: flex;
+    justify-content: space-around; /*Ese kya hua jo humare wo resturant name or home about etc jo hai unme equal space aaya.*/
+    align-items: center; /*Eske use se navbar ki beach mein aaye hai na uper na neche bilkul center.*/
+    text-align: center; /*Eske use se jo humare Everything for you line the beach mein aagye uske Aapka apne ki neche*/
+    flex-wrap: wrap;
+}
+.nav2-left h2{ /*vhe heading jo resturant name hai usko style kra*/
+    font-size: 2rem;
+    color: #b2744c;
+} 
+.nav2-left span{ /*usse name ki under dusra color jo deya hai wo hai ye.*/
+    color: #2f3640;
+}
+.nav2-left p{ /*fr usse ki neche jo Everything kr ki jo line hai usko style kra hai.*/
+    color: #2f3640;
+    font-size: large;
+}
+/* .nav2-left img{
+    height: 100px;
+    display: flex;
+    align-items: center;
+} */
+.menu-icon{ /*ek icon lgaya hai humne wo abhi hide kra hai but uske style ki hai.*/
+    /* color: #2f3640; */
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.nav2-right ul{ /*vhe jo home about ki jo ul tag hai usko style kiya hai*/
+    display: flex;
+    justify-content: center;
+}
+.nav2-right ul li{ 
+    margin: 0 15px; /*ese humare home about mein margin aagye uper neche or beach mein.*/
+}
+.nav2-right ul li a{
+    color:#2f3640;
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* border-radius: 5px; */
+}
+.nav2-right ul li a:hover{
+    color:#b2744c;
+}
+/* media query for resposive */
+/* @media screen and (max-width:705px){
+    .nav1 .right i{
+        display: none;
+    } */
+    /* .nav1{
+        flex-direction: column;
+    }
+    .nav1 h2{
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    } */
+
+
+
+
+
+/* home Style Start */
+#home{ /*Ab humne home ko style kiya hai.*/
+    width: 100%; /*home ki width set kre hai*/
+    height: 100vh; /*home ki height set ki hai*/
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #b2744c; /*fr home ko bg color deya hai.*/
+    z-index: 0;
+    /* padding: 100px 8% 120px; */
+    /* margin: 5px; */
+}
+#home .home-content h2{ /*fr uske under jo heading lekhe aarhe hai left side usko style kiya hai.*/
+    color:black;
+    font-size: 50px;
+    font-weight: bold;
+}
+#home .home-content h2 span{ /* fr usse line mein dusra color jo deya hai wo ese se deya hai*/
+    color: green;
+}
+#home .home-content h3{ /*fr usse ki neche ek line or hai usko style kra.*/
+    color:black;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+#home .home-content p{ /*fr uske neche humne kya kiya ek line the usko edit kra */
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#home img{ /*ab home mein jo image hai right side usko style kra hai*/
+    width: 80%;
+    height: 77vh;
+    margin-left: 250px;
+    padding-top: 20px;
+}
+#home .home-content #btn{ /*fr ek button hai order now kr ki wo edit kra hai*/
+    width: 100px; 
+    height: 40px;
+    margin-left:150px ;
+    margin-top: 10px;
+    background-color: white;
+    color: #2f3640;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    /* border: none; */
+    cursor: pointer;
+}
+#home .home-content #btn:hover{ /*fr uske under hover effect deya hai button ko*/
+    color: #b2744c;
+}
+
+/* @media screen and (max-width:1085px){
+    #home img{
+        width: 50px;
+        height:10px;
+    }
+} */
+
+
+/* About Section Style... */
+#about{ /*about section ki width or height set ki*/
+    /* width: 100%; */
+    /* padding-top: 80px; */
+    height: 100vh;
+    /* background-color: #2f3640; */
+}
+
+#about .container{ /*jo about hai usko container ki under daala hai to direct container ko top se neche kiya hai home se touch tha.*/
+    padding-top: 50px;
+    width: 1100px; /*uske width set ki hai*/
+    /* padding:0 15px; */
+    margin:0 auto; /*margin de hai jsse wo center hojaye.*/
+}
+#about .heading{ /*About ki jo heading the jisme about lekha hua hai usko style kiya hai.*/
+    margin-bottom: 20px; /*About heading ke neche jgha hojaye jo neche image or about lekha hai eskiye deya,*/
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    border-bottom:2px solid #b2744c;
+}
+#about .heading span{ /*jo about hai uske under 2 color deye hai ese.*/
+    color: #b2744c;
+}
+#about .about-content .img img{ /*fr about section mein jo image hai usko style kiya hai*/
+    width: 450px;
+    border-radius: 20px;
+}
+#about .about-content{ /*fr jo about ki image ki side mein jo content lekha hai usko style kiya hai*/
+    padding-top: 30px;
+    display: flex;
+    /* text-align: center; */
+}
+#about .content{ /*usse content ko margin de hai*/
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    margin-left: 100px;
+}
+#about .content h3{ /*fr usse content mein jo heading hai usko style kra hai.*/
+    font-size: 25px;
+    font-weight: bold;
+}
+#about .content p{ /*jo content lekha hai usko style kra hai.*/
+    font-size: 20px;
+    /* font-weight: bold; */
+    padding-top: 10px;
+}
+
+
+/* Dishes Section Style */
+#dishes{ /*phle to dishes section ko height de hai*/
+    height: 100vh;
+}
+.container{ /*fr uske under jo conatiner hai uske width or position set ki hai.*/
+    width: 1100px;
+    margin:0 auto;
+    padding-top: 50px;
+}
+#dishes .heading{ /*popular dishes ki jo heading the jisme dishes lekha hua hai usko style kiya hai.*/
+    margin-bottom: 20px; /*dishes heading ke neche jgha hojaye jo neche hai eskiye deya,*/
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    border-bottom:2px solid #b2744c;
+}
+#dishes .heading span{ /*jo about hai uske under 2 color deye hai ese.*/
+    color: #b2744c;
+}
+/* #dishes{
+    padding: 100px 8% 120px;
+    background: white;
+} */
+.top-card{ /*fr jo card bnaye hai uske leye style kiya hai.*/
+    display: grid; /*ye kya kra hai display grid ki hai*/
+    grid-template-columns:1fr 1fr; /*ye ki kitne colum chahye*/
+    grid-column-gap: 2rem; /*fr unki beach mein gap*/
+    grid-row-gap: 2rem; /*ye row ki side ko gap*/
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: #2f3640 */
+} 
+.top-card .row{ /*jo row hai uske style ki hai.*/
+    background-color: #b2744c; /*bg color deya hai*/
+    position: relative; 
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 350px; /*fr wo jo color aarha hai usko equal width or height de jo image ki hai neche image ko style kiya hai*/
+    height: 200px;
+    margin-left: 90px; /*jo humare row the mtlb ki card the wo start mein aarhe the ese side hue hai ab center mein aarhe hai*/
+
+}
+.top-card .row img{ /*jo image hai cards ki unko sbko ek saath style kra hai.*/
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    /* display: block; */
+
+}
+.top-card .row:hover img{ /*image ko effect deya hai jo card mein image the.*/
+    transform: scale(1.1);
+}
+.card-content{ /*jo card mein lekha hai dish ka name or uske baari mein usko style deya hai.*/
+    width: 350px;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.1), #b2744c);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: 0.5 ease;
+}
+.card-content #btn{ /*card mein jo button hai usko style kiya hai.*/
+    background: #b2744c;
+    width: 100px;
+    height: 25px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card-content h3{ /*usse mein jo dish ka name hai wo h3 tag mein wo style ki hai.*/
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+}
+.card-content p{ /*usse ki neche humne dish ki baari mein lekha hai to usko style kiya hai.*/
+    font-weight: 100;
+    font-size: 12px;
+    color: white;
+}
+.top-card .row:hover .card-content{ /*or ab humne jo humare card hai unpr ye content ko hover se effect deya hai.*/
+    height: 100%;
+
+}
+
+
+/* Menu Section Style */
+.container{ /*fr uske under jo conatiner hai uske width or position set ki hai.*/
+    width: 1100px;
+    margin:0 auto;
+    padding-top: 50px;
+}
+#menu .heading{ /*popular dishes ki jo heading the jisme dishes lekha hua hai usko style kiya hai.*/
+    margin-bottom: 20px; /*dishes heading ke neche jgha hojaye jo neche hai eskiye deya,*/
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    border-bottom:2px solid #b2744c;
+}
+#menu .heading span{ /*jo about hai uske under 2 color deye hai ese.*/
+    color: #b2744c;
+}
+.nav4{
+    width: 1100px;
+    height: 70px;
+    background: #b2744c;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    flex-wrap: wrap;
+}
+.menu-nav ul{ /*vhe jo home about ki jo ul tag hai usko style kiya hai*/
+    display: flex;
+    justify-content: center;
+}
+.menu-nav ul li{ 
+    margin: 0 15px; /*ese humare home about mein margin aagye uper neche or beach mein.*/
+}
+.menu-nav ul li a{
+    color:black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* border-radius: 5px; */
+}
+.menu-nav ul li a:hover{
+    color:white;
+}
+/* yha se card ki style ki hai jo menu section ka hi part hai. */
+/* soup ki card Style */
+#soup h1{
+    padding-top: 20px;
+}
+.card-wrapper{
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem; /*fr unki beach mein gap*/
+    grid-row-gap: 2rem; /*ye row ki side ko gap*/
+    align-items: center;
+}
+.card{
+    background: #2f3640;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius:30px ;
+    /* border: 1px solid white; */
+    color: white;
+    justify-content:space-between;
+}
+.card-content1{
+    margin-right: 80px;
+}
+.card img{
+    width: 250px;
+    height:200px;
+    border: 10px;
+    border-radius: 10% 0% 0% 10% / 10% 10% 10% 10% ;
+}
+#btn{
+    margin-top: 10px;
+    background: #b2744c;
+    width: 70px;
+    height: 25px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* chaat ki card Style */
+#chaat h1{
+    padding-top: 30px;
+}
+/* .card{
+    background: #2f3640;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius:30px ;
+    color: white;
+    justify-content:space-between;
+}
+.card-content1{
+    margin-right: 80px;
+}
+.card img{
+    width: 250px;
+    height:200px;
+    border: 10px;
+    border-radius: 10% 0% 0% 10% / 10% 10% 10% 10% ;
+}
+.card #btn{
+    margin-top: 10px;
+    background: #b2744c;
+    width: 70px;
+    height: 25px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+} */
+/* Vegetable card Style */
+#vegetable{
+    padding-top:30px ;
+}
+
+/* Asian-Fushion card Style*/
+#asian{
+    padding-top: 30px;
+}
+/* Rice Card Style */
+#rice{
+    padding-top: 30px;
+}
+/* Desserts Card Style */
+#desserts{
+    padding-top: 30px;
+}
+/*Drinks Card Syle */
+#drinks{
+    padding-top: 30px;
+}
+
+
+
+/* Review Section Style */
+#review{
+    height: 100vh;
+}
+.container1{ /*fr uske under jo conatiner hai uske width or position set ki hai.*/
+    width: 1100px;
+    margin:0 auto;
+    padding-top: 50px;
+}
+#review .heading{ /*popular dishes ki jo heading the jisme dishes lekha hua hai usko style kiya hai.*/
+    margin-bottom: 20px; /*dishes heading ke neche jgha hojaye jo neche hai eskiye deya,*/
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    border-bottom:2px solid #b2744c;
+}
+#review .heading span{ /*jo about hai uske under 2 color deye hai ese.*/
+    color: #b2744c;
+}
+#review .card-wrapper1{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: grid; /*ye kya kra hai display grid ki hai*/
+    grid-template-columns:1fr 1fr 1fr; /*ye ki kitne colum chahye*/
+    grid-column-gap: 2rem; /*fr unki beach mein gap*/
+    grid-row-gap: 2rem; /*ye row ki side ko gap*/
+}
+#review .card-wrapper1 .card-review{    
+    background-color: #2f3640;
+    padding: 4rem 2rem;
+    position: relative;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#review .card-wrapper1 .card-review:hover{
+    background-color: #b2744c;
+    color: white;
+}
+#review .card-wrapper1 .card-review img{
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    top: -1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+
+}
+.card-review h4{
+    font-size: 1.4rem;
+}
+#review .card-wrapper1 .card-review p{
+    font-size: 1.1rem;
+    padding-top: 5px;
+}
+
+
+
+
+/* Contact Section Style */
+#contact{
+    height: 90vh;
+}
+#contact .container{ /*contact ki container ko style kra hai*/
+    padding-top: 30px; /*container ko top se neche kra */
+    margin-bottom: 90px; /*usko neche thoda uper kiya*/
+    width: 1100px; /*container ki width de*/
+    height: 80vh; /*container ki height de*/
+    background: linear-gradient(90deg, #f7f5f2 80%,#b2744c 20%); /*ye container ko bg color deya or ye bola ki 80% area mein white or baaki mein dusra color ho.*/
+    border-radius: 10px; /*fr container ka radius set kiya.*/
+}
+#contact .heading{ /*contact us name se heading hai usko style kra hai.*/
+    text-align: center;  
+    /* padding-top: 10px; */
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom:2px solid #b2744c;
+}
+#contact .heading span{ /*contact us heading ki under 2 color deye hai uske leye*/
+    color: #b2744c;
+}
+#contact .row{
+    display: flex;
+    /* align-items: center; */
+    /* text-align: center; */
+    /* justify-content:space-evenly; */
+}
+#contact .row input{ /*fr jo form hai jisme input tag hai name email vaale usko style kiya.*/
+    width: 400px; /*uske width set ki */
+    border: none; /*fr uske jo box bne aarhe the unko none kiya*/
+    border-bottom: 1px solid #b2744c; /*box ki jgha ye neche se bs border deya es color ka.*/
+    background-color: #f7f5f2;
+    margin: 20px;
+}
+#contact #contact-btn{ /*fr jo submit button hai usko edit kra.*/
+    width: 150px; 
+    height: 40px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    /* border: none; */
+    cursor: pointer;
+}
+#contact #contact-btn:hover{ /*button mein hover effect deya hai.*/
+    background-color: #b2744c;
+    color: white;
+}
+#contact .row h2{ /*fr jo Info name se heading hai usko edit kra.*/
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+#contact .row p{ /*fr Info se neche jo address time etc hai usko edit kra.*/
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    margin: 10px;
+}
+#col2{ /*fr jo info ka part hai usko puri ko style kra. usko color deya black or bhi effect deye.*/
+    width: 40%;
+    height: 53vh;
+    background: black;
+    margin-bottom: 90px;
+    margin-left: 250px;
+    padding: 10px;
+}
+
+
+/* footer Section Style */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+
+
+/* arrow Section Style */
+.arrow{
+    position: fixed;
+    background: #b2744c;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+.arrow img{
+    width: 50px;
+}
